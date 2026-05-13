@@ -9,7 +9,7 @@ class Sensoragua:
         return self._nome
     
     def LerAgua(self):
-        print(self.altAtual) 
+        return self._altAtual
 
     
     def Analise(self):
