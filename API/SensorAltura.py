@@ -25,7 +25,7 @@ class Sensoragua:
             print(f"A água está exatamente no limite. \nHora: {horaAtual}")
         print("---------------")
 
-        diferenca = self._altAtual - self.altAnterior
+        diferenca = self._altAtual - self._altAnterior
         if self._altAtual > self._altAnterior:
             print(f"O nível d'água subiu {abs(diferenca)}cm \nHora: {horaAtual}")
         elif self._altAtual < self._altAnterior:
@@ -40,7 +40,7 @@ def IniciarPrograma():
         #b = float(input("Qual é o nível de água registrado anteriormente da região?"))
         #c = float(input("Qual é o limite da região?"))
         a, b, c = 10, 12, 15
-        Sensor01 = Sensoragua(a, b, c)
+        Sensor01 = Sensoragua("Caixa", a, b, c)
         Sensor01.Analise()
 
 IniciarPrograma()
