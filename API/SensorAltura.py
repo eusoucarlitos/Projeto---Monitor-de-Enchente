@@ -1,9 +1,9 @@
 class Sensoragua: 
     def __init__ (self, nome, altAtual, altAnterior, altLimite):
-        self.nome = nome
-        self.altAtual = altAtual
-        self.altAnterior = altAnterior
-        self.altLimite = altLimite
+        self._nome = nome
+        self._altAtual = altAtual
+        self._altAnterior = altAnterior
+        self._altLimite = altLimite
 
     def getNome(self):
         return self._nome
@@ -17,18 +17,18 @@ class Sensoragua:
         hora = datetime.now()
         horaAtual = hora.strftime("%H:%M:%S")
         #Analise sobre se está acima do limite
-        if self.altAtual < self.altLimite:
+        if self._altAtual < self._altLimite:
             print(f"A água está abaixo do limite. \nHora: {horaAtual}")
-        elif self.altAtual > self.altLimite:
+        elif self._altAtual > self._altLimite:
             print(f"A água está acima do limite. \nHora: {horaAtual}")
         else:
             print(f"A água está exatamente no limite. \nHora: {horaAtual}")
         print("---------------")
 
-        diferenca = self.altAtual - self.altAnterior
-        if self.altAtual > self.altAnterior:
+        diferenca = self._altAtual - self.altAnterior
+        if self._altAtual > self._altAnterior:
             print(f"O nível d'água subiu {abs(diferenca)}cm \nHora: {horaAtual}")
-        elif self.altAtual < self.altAnterior:
+        elif self._altAtual < self._altAnterior:
             print(f"O nível d'água desceu {abs(diferenca)}cm \nHora: {horaAtual}")
         else:
             print("O nível d'água está parada")
