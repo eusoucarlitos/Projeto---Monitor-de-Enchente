@@ -1,1 +1,33 @@
+html {
+    font-family: sans-serif;
+    -ms-text-size-adjust: 100%;
+    -webkit-text-size-adjust: 100%;
+}
 
+*{
+    margin: 0;
+}
+
+body {
+    margin: 0;
+}
+
+header {
+    padding: 1em;
+    background-color: #7375a5;
+}
+
+.navegacao-interno {
+    display: block;
+}
+
+ul {
+    color: transparent;
+    font-weight: normal
+}
+
+li a {
+    color: white;
+    font-weight: bold;
+    text-decoration: none;
+}
