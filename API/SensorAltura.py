@@ -1,3 +1,6 @@
+from flask import Flask
+from datetime import datetime
+
 class Sensoragua: 
     def __init__ (self, nome, altAtual, altAnterior, altLimite):
         self._nome = nome
@@ -13,7 +16,6 @@ class Sensoragua:
 
     
     def Analise(self):
-        from datetime import datetime
         hora = datetime.now()
         horaAtual = hora.strftime("%H:%M:%S")
         #Analise sobre se está acima do limite
@@ -33,14 +35,12 @@ class Sensoragua:
         else:
             print("O nível d'água está parada")
 
-
 def IniciarPrograma():
-        #print("Olá, informe todas as medidas em CM, por favor.")
-        #a = float(input("Qual é o nível de água atual da região?"))
-        #b = float(input("Qual é o nível de água registrado anteriormente da região?"))
-        #c = float(input("Qual é o limite da região?"))
-        a, b, c = 10, 12, 15
+        print("Olá, informe todas as medidas em CM, por favor.")
+        a = float(input("Qual é o nível de água atual da região?"))
+        b = float(input("Qual é o nível de água registrado anteriormente da região?"))
+        c = float(input("Qual é o limite da região?"))
         Sensor01 = Sensoragua("Caixa", a, b, c)
         Sensor01.Analise()
 
-IniciarPrograma()
+# Parte em Flask, na teoria
