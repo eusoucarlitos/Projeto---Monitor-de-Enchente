@@ -12,9 +12,21 @@ body {
     margin: 0;
 }
 
+.pagina {
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+}
+
+main {
+    flex: 1;
+}
+
 header {
-    padding: 1em;
-    background-color: #7375a5;
+    padding: 1.2em;
+    background-color: #319190;
+    box-shadow: 0 0 0.9em #7c7c7c;
+    border-color: #319190;
 }
 
 .navegacao-interno {
@@ -30,4 +42,36 @@ li a {
     color: white;
     font-weight: bold;
     text-decoration: none;
+}
+
+.tabela {
+    color: white;
+    margin: 1.5em;
+    padding: 0.4em;
+    background-color: #e73a00;
+    border-radius: 0.5em;
+    box-shadow: 0 0 0.9em #7c7c7c;
+    border-color: #e73a00;
+    transition: background-color 0.3s ease-in-out, transform 0.2s ease;
+}
+
+.tabela:hover {
+    transform: translateY(1em);
+}
+
+th, td{
+    padding-top: 0.8em;
+    padding-bottom: 0.8em;
+    padding-left: 3em;
+    padding-right: 3em;
+}
+
+th {
+    border-bottom: 0.15em solid white;
+}
+
+footer {
+    background-color: #260d0d;
+    text-align: center;
+    padding: 4em;
 }
