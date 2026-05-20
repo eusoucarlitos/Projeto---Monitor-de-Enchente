@@ -1,4 +1,4 @@
-from flask import Flask
+from flask import Flask, render_template, jsonify, request
 from datetime import datetime
 
 class Sensoragua: 
@@ -47,9 +47,31 @@ def IniciarPrograma():
 
 app = Flask(__name__)
 
-@app.route("/")
-def hello_world():
-    return "<p>Hello, World!</p>"
+# GET = Pegar dodos do site
+# POST = Enviar dados
+# rotas = o principal/algo/_algo_
 
+@app.route("/")
+def homepage():
+    return render_template("index.html")
+
+@app.route("/analise", methods=["GET", "POST"])
+def analise():
+    if request.method == "POST":
+        Altura_Atual = request.form ['Atual']
+        Altura_Anterior = request.form ['Anterior']
+        Altura_Limite = request.form ['Limite']
+
+        sensor = (
+            "Nível",
+            Altura_Atual,
+            Altura_Anterior,
+            Altura_Limite
+        )
+        Dado = sensor.Analise()
+        
+        return f"Dado enviado, resposta: {Dado}"
+
+#Iniciar a host + servidor local
 if __name__ == "__main__":
     app.run()
