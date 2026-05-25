@@ -27,21 +27,7 @@ header {
     background-color: #319190;
     box-shadow: 0 0 0.9em #7c7c7c;
     border-color: #319190;
-}
-
-.navegacao-interno {
-    display: block;
-}
-
-ul {
-    color: transparent;
-    font-weight: normal
-}
-
-li a {
     color: white;
-    font-weight: bold;
-    text-decoration: none;
 }
 
 .tabela {
@@ -59,6 +45,12 @@ li a {
     transform: translateY(1em);
 }
 
+table {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
 th, td{
     padding-top: 0.8em;
     padding-bottom: 0.8em;
@@ -70,7 +62,12 @@ th {
     border-bottom: 0.15em solid white;
 }
 
+.direitos-reservados {
+    color: white;
+}
+
 footer {
+    box-shadow: 0 0 0.9em #7c7c7c;
     background-color: #260d0d;
     text-align: center;
     padding: 4em;
