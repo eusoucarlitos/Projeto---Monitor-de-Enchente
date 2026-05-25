@@ -5,7 +5,6 @@ class Sensoragua:
     def __init__ (self, nome, altAtual, altAnterior, altLimite):
         self._nome = nome
         self._altAtual = altAtual
-        self._altAnterior = altAnterior
         self._altLimite = altLimite
 
     def getNome(self):
@@ -59,13 +58,11 @@ def homepage():
 def analise():
     if request.method == "POST":
         Altura_Atual = request.form ['Atual']
-        Altura_Anterior = request.form ['Anterior']
         Altura_Limite = request.form ['Limite']
 
         sensor = (
             "Nível",
             Altura_Atual,
-            Altura_Anterior,
             Altura_Limite
         )
         Dado = sensor.Analise()
