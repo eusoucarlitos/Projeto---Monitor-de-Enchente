@@ -1,7 +1,7 @@
 ## Geral do Aplicativo (Overview) 📜
 
 -  Monitor de Enchente
--  
+  
 ## Componentes utilizados e necessários (intermediário) ☕️
 
 - ARDUINO
