@@ -1,7 +1,7 @@
 from flask import Flask, render_template, jsonify, request
 from datetime import datetime
 
-class Sensoragua: 
+class sensorAgua: 
     def __init__ (self, nome, altAtual, altLimite):
         self._nome = nome
         self._altAtual = altAtual
