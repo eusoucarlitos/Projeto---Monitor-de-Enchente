@@ -4,7 +4,7 @@
 -  
 ## Componentes utilizados e necessários (intermediário) ☕️
 
--
+- ARDUINO
 
 ## Arquivos necessários (final) 🎉
 
