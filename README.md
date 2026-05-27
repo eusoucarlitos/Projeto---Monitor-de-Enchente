@@ -8,7 +8,9 @@
 
 ## Arquivos necessários (final) 🎉
 
--
+- API: LED.py , app.py , sensor.py ;
+  
+- SITE: index.html , script.js , styles.css .
 
 ## Como funciona (final) 🦄
 
