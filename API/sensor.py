@@ -9,24 +9,3 @@ class sensorAgua:
     
     def LerAgua(self):
         return self._altAtual
-
-    
-    def Analise(self):
-        hora = datetime.now()
-        horaAtual = hora.strftime("%H:%M:%S")
-        #Analise sobre se está acima do limite
-        if self._altAtual < self._altLimite:
-            print(f"A água está abaixo do limite. \nHora: {horaAtual}")
-        elif self._altAtual > self._altLimite:
-            print(f"A água está acima do limite. \nHora: {horaAtual}")
-        else:
-            print(f"A água está exatamente no limite. \nHora: {horaAtual}")
-        print("---------------")
-
-        diferenca = self._altAtual - self._altAnterior
-        if self._altAtual > self._altAnterior:
-            print(f"O nível d'água subiu {abs(diferenca)}cm \nHora: {horaAtual}")
-        elif self._altAtual < self._altAnterior:
-            print(f"O nível d'água desceu {abs(diferenca)}cm \nHora: {horaAtual}")
-        else:
-            print("O nível d'água está parada")
