@@ -1,7 +1,7 @@
-class Atuador:
+class LED:
   
-  def __init__(self, nome, pino):
-    self._nome = nome
+  def __init__(self, cor, pino):
+    self._cor = cor
     self._pino = pino
     self._estado = False
 
