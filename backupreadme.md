@@ -4,6 +4,9 @@ O aplicativo tem como objetivo monitorar o nível da água para ajudar na preven
 
 ## Componentes utilizados e necessários (intermediário) ☕️
 Arduino
+API: LED.py , app.py , sensor.py ;
+
+SITE: index.html , script.js , styles.css .
 -
 
 ## Arquivos necessários (final) 🎉
