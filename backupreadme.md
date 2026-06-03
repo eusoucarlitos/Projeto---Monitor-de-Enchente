@@ -16,7 +16,7 @@ SITE: index.html , script.js , styles.css .
 O sensor de água detecta o nível da água em determinado local. Quando o nível ultrapassa o limite considerado seguro, o sistema envia um alerta ao usuário por meio de uma luz LED, indicando risco de enchente e a necessidade de tomar precauções.
 -
 ## Bibliotecas usadas / Linguagens usadas  🔥
-
+Python, Java-script, Html e Css
 -
 ## Contribuições / Agradecimentos ✨
 Carlito
