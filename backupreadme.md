@@ -3,7 +3,7 @@ O aplicativo tem como objetivo monitorar o nível da água para ajudar na preven
 -
 
 ## Componentes utilizados e necessários (intermediário) ☕️
-
+ARDUINO
 -
 
 ## Arquivos necessários (final) 🎉
