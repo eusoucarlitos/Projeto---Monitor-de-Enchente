@@ -1,23 +1,72 @@
-// C++ code
-//
-int Umidade = 0;
+// 1. DEFINIÇÃO DA CLASSE DO SENSOR
+class SensorUltrassonico {
+  private:
+    int triggerPin;
+    int echoPin;
 
-void setup()
-{
-  pinMode(A0, INPUT);
-  pinMode(11, OUTPUT);
-  pinMode(8, OUTPUT);
+  public:
+    // Construtor: define quais pinos o sensor vai usar
+    SensorUltrassonico(int trig, int echo) {
+      triggerPin = trig;
+      echoPin = echo;
+    }
+
+    // Método que calcula a distância
+    float obterDistanciaCM() {
+      pinMode(triggerPin, OUTPUT);
+      digitalWrite(triggerPin, LOW);
+      delayMicroseconds(2);
+      digitalWrite(triggerPin, HIGH);
+      delayMicroseconds(10);
+      digitalWrite(triggerPin, LOW);
+      pinMode(echoPin, INPUT);
+      
+      return 0.01723 * pulseIn(echoPin, HIGH);
+    }
+};
+
+// 2. DEFINIÇÃO DA CLASSE DO LED
+class IndicadorLED {
+  private:
+    int pinoLED;
+
+  public:
+    IndicadorLED(int pino) {
+      pinoLED = pino;
+    }
+
+    void inicializar() {
+      pinMode(pinoLED, OUTPUT);
+    }
+
+    void ligar() {
+      digitalWrite(pinoLED, HIGH);
+    }
+
+    void desligar() {
+      digitalWrite(pinoLED, LOW);
+    }
+};
+
+// --- INSTANCIAÇÃO DOS OBJETOS ---
+// Criamos os "objetos" reais baseados nas classes acima
+SensorUltrassonico sensor(2, 2); 
+IndicadorLED ledAlerta(LED_BUILTIN);
+
+void setup() {
+  ledAlerta.inicializar(); // O LED se configura sozinho
 }
 
-void loop()
-{
-  Umidade = analogRead(A0);
-  digitalWrite(11, LOW);
-  digitalWrite(8, LOW);
-  if (Umidade < 100) {
-    digitalWrite(11, HIGH);
-  } else {
-    digitalWrite(8, HIGH);
+void loop() {
+  // O loop principal fica extremamente fácil de ler (parece inglês fluente)
+  float nivelAgua = sensor.obterDistanciaCM();
+
+  if (nivelAgua < 150) {
+    ledAlerta.ligar();
   }
-  delay(10); // Delay a little bit to improve simulation performance
+  if (nivelAgua > 150) {
+    ledAlerta.desligar();
+  }
+
+  delay(10);
 }
