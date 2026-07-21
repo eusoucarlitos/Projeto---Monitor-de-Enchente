@@ -50,7 +50,7 @@ class IndicadorLED {
 
 // --- INSTANCIAÇÃO DOS OBJETOS ---
 // Criamos os "objetos" reais baseados nas classes acima
-SensorUltrassonico sensor(2, 2); 
+SensorUltrassonico sensor(2, 3); 
 IndicadorLED ledAlerta(LED_BUILTIN);
 
 void setup() {
