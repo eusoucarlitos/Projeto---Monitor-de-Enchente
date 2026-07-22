@@ -56,11 +56,14 @@ De forma simplificada, o programa que consiste no monitoriamento da água das ch
 
 1. O sensor ultrassonico monitora continuamente a distância da água relativa a uma superfíce -> Quanto mais perto, maior é o volume;
 2. Os dados capturados pelo arduino, enviados em .json, e são processados pelo sistema desenvolvido em Python;
-3. Quando o nível da água ultrapassa o limite considerado seguro, o alerta é acionado e enviado para o site;
-4. O LED permanece ligado para indicar visualmente o risco de enchente no local analisado;
-5. O usuário recebe a notificação no site, e após isso pode tomar as medidas necessárias de segurança.
+3. O nível d'água é exibido no site, informando o risco de enchente ("Baixo", "Medio" ou "Alto");
+4. O usuário recebe as informações no site, e após isso pode tomar as medidas necessárias de segurança.
 
 ## Contribuições / Agradecimentos:
+
+## Notas importantes:
+- Como a equipe não teve acesso a um arduino físico durante a realização do projeto, os dados enviados para o site são simulados dentro do `app.py`, então, o código da api não é compatível com um arduino físico até segunda via.
+- 
 ----| Projeto desenvolvido com a participação de:
 * Carlito
 * Ronald (Enzzo)
