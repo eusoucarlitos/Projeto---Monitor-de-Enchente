@@ -4,7 +4,7 @@
 - Este aplicativo foi desenvolvido para monitorar o nível da água em áreas suscetíveis a enchentes. O sistema detecta alterações no nível da água e envia alertas aos usuários quando há risco de inundação, permitindo que medidas preventivas sejam tomadas com antecedência;
 - Em poucas palavras, um monitor de enchente;
 
-- Status de conclusão do projeto = Incompleto (Mais informações em "Considerações sobre o projeto" ao final do README)
+- Status de conclusão do projeto = Completo (20/07/2026)
 
 ### Divisão dos arquivos do projeto:
 ```text
@@ -56,12 +56,6 @@ De forma simplificada, o programa que consiste no monitoriamento da água das ch
 3. Quando o nível da água ultrapassa o limite considerado seguro, o alerta é acionado e enviado para o site;
 4. O LED permanece ligado para indicar visualmente o risco de enchente no local analisado;
 5. O usuário recebe a notificação no site, e após isso pode tomar as medidas necessárias de segurança.
-
-## Considerações gerais sobre o projeto:
- Como citado na visão geral do aplicativo, o projeto está atualmente incompleto (21/07/2026) devido as seguinte questões:
- 
- 1. O grupo não conseguiu fazer a conexão entre os componentes necessário (arduino - api - site) apesar de ter feito cada um separadamente;
- 2. O nível técnico diferente entre os membros do grupo influenciaram ao decorrer do projeto. Além disso, o prazo apesar de longo (média = 2,5 messes), foi quebrado em aulas onde membros do grupo faltaram e/ou não tiveram aula por teceiros (falta de água, feriado, etc.)
 
 ## Contribuições / Agradecimentos:
 ----| Projeto desenvolvido com a participação de:
