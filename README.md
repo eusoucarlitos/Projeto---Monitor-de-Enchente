@@ -72,3 +72,13 @@ De forma simplificada, o programa que consiste no monitoriamento da água das ch
 - `Python`, `Java-script`, `HTML`, `CSS`, `C++`
 
 * Agradecemos a todos os colaboradores extras que contribuíram para o desenvolvimento deste sistema de prevenção de enchentes.
+
+## Fotos da equipe trabalhando:
+
+<p align="center">
+  <img src="img/WhatsApp%20Image%202026-07-21%20at%2021.09.53.jpeg" width="18%" height= auto>
+  <img src="img/WhatsApp%20Image%202026-07-21%20at%2021.09.54.jpeg" width="18%" height= auto>
+  <img src="img/WhatsApp%20Image%202026-07-21%20at%2021.09.55.jpeg" width="18%" height= auto>
+  <img src="img/WhatsApp%20Image%202026-07-21%20at%2021.09.56.jpeg" width="18%" height= auto>
+  <img src="img/WhatsApp%20Image%202026-07-21%20at%2021.09.57.jpeg" width="18%" height= auto>
+</p>
