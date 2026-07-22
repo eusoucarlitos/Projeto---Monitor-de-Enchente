@@ -63,7 +63,7 @@ De forma simplificada, o programa que consiste no monitoriamento da água das ch
 
 ## Notas importantes:
 - Como a equipe não teve acesso a um arduino físico durante a realização do projeto, os dados enviados para o site são simulados dentro do `app.py`, então, o código da api não é compatível com um arduino físico até segunda via.
-- 
+
 ----| Projeto desenvolvido com a participação de:
 * Carlito
 * Ronald (Enzzo)
