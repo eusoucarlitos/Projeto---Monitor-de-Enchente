@@ -26,12 +26,11 @@ De Forma simplificada, o programa que consiste no monitoriamento da água das ch
 
 1. O sensor de nível de água monitora continuamente a quantidade de água presente em um determinado local;
 2. Os dados capturados são processados pelo sistema desenvolvido em Python;
-3. Quando o nível da água ultrapassa o limite considerado seguro, um alerta é acionado;
-4. O LED é ligado para indicar visualmente o risco de enchente;
-5. O usuário recebe a notificação e pode tomar as medidas de segurança necessárias.
+3. O progama detecta o nível d'água e informa se há risco de enchente;
+4. O usuário consegue acessar essa informação atraves do site e pode tomar as medidas de segurança necessárias.
 
 ## Bibliotecas usadas / Linguagens usadas:
-- `Python`, `Java-script`, `HTML`, `CSS`, `C++`
+- `Python`, `JavaScript`, `HTML`, `CSS`, `C++`
 
 ## Contribuições / Agradecimentos:
 ----| Projeto desenvolvido com a participação de:
