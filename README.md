@@ -15,10 +15,12 @@ Projeto---Monitor-de-Enchente (PME.)/
 │   ├── arduinocode.cpp
 |   └── arduinotinker.png
 │
+├── api/
+│   ├── app.py
+│   └── dados.json
+|
 ├── site/
-│   ├── templates/
-|   |   └── index.html
-|   |
+|   |── index.html
 │   ├── style.css
 │   └── script.js
 |
@@ -39,8 +41,7 @@ Projeto---Monitor-de-Enchente (PME.)/
 ### Backend:
 Rota = `PME\api\- `
 * `app.py`
-* `sensor.py`
-* `LED.py`
+* `dados.json`
 ### Interface Web:
 Rota = `PME\site\-`
 * `index.html` em `\templates\`
