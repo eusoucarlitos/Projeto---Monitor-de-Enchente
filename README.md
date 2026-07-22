@@ -24,6 +24,9 @@ Projeto---Monitor-de-Enchente (PME.)/
 │   ├── style.css
 │   └── script.js
 |
+├── img/
+|   └── fotos_da_equipe(jpeg)
+|
 └── README.md
 ```
 
